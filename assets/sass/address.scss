@@ -1,0 +1,133 @@
+
+section{
+    h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+}
+
+form{
+margin-top: 4rem;
+margin-left: 38.5rem;
+    height: 1150px;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #87237e;
+
+    .detail-box{
+
+        margin-top: 10px;
+        margin-left: 5rem;
+        padding: 15px;
+
+        label, input{
+            margin-bottom: 30px;
+        }
+
+
+.input-data{
+    position: relative;
+
+    input{
+        height: 40px;
+        width: 85%;
+        border: none;
+        border-bottom: .5px solid ;
+        font-size: 18px;
+        outline: none;
+
+   
+}
+label{
+    color: grey;
+    font-size: 20px;
+    pointer-events: none;
+    font-family: "Gill Sans", sans-serif;
+
+
+}
+
+}
+
+    }
+
+
+    .address-box{
+
+        margin-top: 10px;
+        margin-left: 5rem;
+        padding: 15px;
+
+
+        label, input{
+            margin-bottom: 30px;
+        }
+
+.input-data{
+    position: relative;
+
+    input{
+        height: 40px;
+        width: 85%;
+        border: none;
+        border-bottom: .5px solid ;
+        font-size: 18px;
+        outline: none;
+
+   
+}
+label{
+    color: grey;
+    font-size: 20px;
+    pointer-events: none;
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+}
+    }
+
+
+    #h3-1{
+    
+        padding-top: 60px;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.795);
+        text-align: center;
+    }
+
+    #h3-2{
+
+        padding-top: 3rem;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.795);
+        text-align: center;
+
+
+
+    }
+
+   
+
+   
+    button{
+        background-color: #87237e;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px;
+        margin-left: 29rem;
+        border: none;
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 0 2px 8px rgba(32, 32, 32, 0.3);
+        margin-top: 40px;
+        
+    }
+}
+
