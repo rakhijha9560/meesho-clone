@@ -9,9 +9,11 @@
               alt="Dark-logo"
             />
           </div>
-          <div>
-            <input placeholder="Try these accessories" />
-          </div>
+          <div class="I-2-box">
+          <i class="ri-search-line"></i>
+          <input placeholder="Try these accessories" />
+        
+        </div>
           <div class="cart-box">
             <div>
               <span>Download App</span>
@@ -60,7 +62,7 @@
       <section>
         <div>
           <h1>Your cart item </h1>
-          <h1 v-if="cartItem.value == null" >Your cart is empty please add item </h1>
+          <h3 v-if="cartItem.value == null" >Your cart is empty please add item </h3>
         </div>
       </section>
   

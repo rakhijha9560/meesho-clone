@@ -9,9 +9,11 @@
               alt="Dark-logo"
             />
           </div>
-          <div>
-            <input placeholder="Try these accessories" />
-          </div>
+          <div class="I-2-box">
+          <i class="ri-search-line"></i>
+          <input placeholder="Try these accessories" />
+        
+        </div>
           <div class="cart-box">
             <div>
               <span>Download App</span>
@@ -59,12 +61,13 @@
       </nav>
       
       <section>
-        <div>
-            <h1>Payment</h1>
-        </div>
+        
       </section>
       <div class="COD-box">
 <div>
+  <div>
+            <h1>Payment</h1>
+        </div>
     <h3>Select Payment Method</h3>
 </div>
      <div>
@@ -72,7 +75,7 @@
        <label>Pay cash on delivery <input type="radio"/></label>
      </div>
      <div>
-        <button @click="handlePlaceOreder">Place order</button>
+        <button @click="handlePlaceOreder">Pay-Now</button>
      </div>
     </div>
       <footer>

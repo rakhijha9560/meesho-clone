@@ -9,9 +9,11 @@
               alt="Dark-logo"
             />
           </div>
-          <div>
-            <input placeholder="Try these accessories" />
-          </div>
+          <div class="I-2-box">
+          <i class="ri-search-line"></i>
+          <input placeholder="Try these accessories" />
+        
+        </div>
           <div class="cart-box">
             <div>
               <span>Download App</span>
@@ -59,8 +61,8 @@
       </nav>
       <section>
         <div>
-          <h1>Your cart item </h1>
-          <h1 v-if="cartItem.value == null" >Your cart is empty please add item </h1>
+          <h1>Order Summary </h1>
+          <h3 v-if="cartItem.value == null" >Your cart is empty please add item! </h3>
         </div>
       </section>
   
@@ -75,9 +77,8 @@
             <div class="des">
               <p>price : {{ item.price }}</p>
               <button @click="handleRemoveItem(item, index)">remove-from-cart</button>
-              <span>
-              <button @click="handlePlaceOrder">place-order</button>
-            </span>
+            
+          
             </div>
           </div>
         </div>
@@ -93,6 +94,9 @@
     <p>{{ address.city  }}</p>
     <p>{{ address.state  }}</p>
     <p>{{ address.nearBy  }}</p>
+    <div>
+      <button @click="handlePlaceOrder">place-order</button>
+    </div>
 </div>
 
       <footer>

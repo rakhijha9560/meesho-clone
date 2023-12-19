@@ -9,8 +9,10 @@
             alt="Dark-logo"
           />
         </div>
-        <div>
+        <div class="I-2-box">
+          <i class="ri-search-line"></i>
           <input placeholder="Try these accessories" />
+        
         </div>
         <div class="cart-box">
           <div>
@@ -58,26 +60,21 @@
       <hr />
     </nav>
 
-    <section>
+    <form @submit.prevent="">
       <div>
         <h1>ADD DELIVERY ADDRESS</h1>
       </div>
-    </section>
-
-    <form @submit.prevent="">
       <div>
         <h3 id="h3-1">Contact Details</h3>
       </div>
       <div class="detail-box">
         <div class="input-data">
-          <label>Name</label><br>
-        <input v-model="formData.name"  type="text" required/>
-        
+          <label>Name</label><br />
+          <input v-model="formData.name" type="text" required />
         </div>
         <div class="input-data">
-          <label>ContactNumber</label><br>
-           <input v-model="formData.contactNumber" type="number" required/>
-           
+          <label>ContactNumber</label><br />
+          <input v-model="formData.contactNumber" type="number" required />
         </div>
       </div>
       <div>
@@ -85,39 +82,32 @@
       </div>
       <div class="address-box">
         <div class="input-data">
-          <label>Building-Name</label><br>
-            <input  v-model="formData.buildingName" type="text" required/>
-            
+          <label>Building-Name</label><br />
+          <input v-model="formData.buildingName" type="text" required />
         </div>
         <div class="input-data">
-          <label>Colony</label><br>
-          <input v-model="formData.colony" type="text" required/>
-          
+          <label>Colony</label><br />
+          <input v-model="formData.colony" type="text" required />
         </div>
         <div class="input-data">
-          <label>Pincode</label><br>
-            <input  v-model="formData.pincode" type="number" required/>
-          
-          
+          <label>Pincode</label><br />
+          <input v-model="formData.pincode" type="number" required />
         </div>
         <div class="input-data">
-          <label>City</label><br>
-          <input  v-model="formData.city" type="text" required/>
-           
+          <label>City</label><br />
+          <input v-model="formData.city" type="text" required />
+
           <div class="input-data">
-            <label>State</label><br>
-              <input  v-model="formData.state" type="text" required/>
-           
+            <label>State</label><br />
+            <input v-model="formData.state" type="text" required />
           </div>
           <div class="input-data">
-            <label>NearBy</label><br>
-              <input  v-model="formData.nearBy" type="text" required/>
-              
+            <label>NearBy</label><br />
+            <input v-model="formData.nearBy" type="text" required />
           </div>
 
           <div>
-            <button
-              @click="handleNext()">Next-></button>
+            <button @click="handleNext()">Next-></button>
           </div>
         </div>
       </div>
@@ -214,8 +204,6 @@ import { ref, reactive } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
-
-
 const formData = reactive({
   name: "",
   contactNumber: "",
@@ -227,40 +215,12 @@ const formData = reactive({
   nearBy: "",
 });
 
-
-// const handleNext = () => {
-//   console.log('rakhi');
-//   // handleAddress();
-//   const addressData = {
-//     // name: name.value,
-//     contactNumber: contactNumber.value,
-//     BuildingName: buildingName.value,
-//     Colony: colony.value,
-//     Pincode: pincode.value,
-//     City: city.value,
-//     State: state.value,
-//     NearBy: nearBy.value,
-//   };
-
-//   // handleAddress(addressData);
-
-//   // Navigate to the "/payment" route
-//   router.push("/payment");
-// };
-
-
-
 const handleNext = () => {
-  console.log('rakhi');
+  console.log("rakhi");
   console.log("formData", formData);
   // Save form data to local storage
   localStorage.setItem("userDetail", JSON.stringify(formData));
   // Navigate to the "/payment" route
   router.push("/orderConfirm");
 };
-
-// function handleAddress() {
-//   console.log("addresData", formData);
-//   localStorage.setItem("userDetail", JSON.stringify(addressData));
-// }
 </script>
