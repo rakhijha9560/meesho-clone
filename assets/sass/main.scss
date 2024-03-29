@@ -4,146 +4,116 @@
 }
 
 nav {
-
-  .navBox-1{
-
+  .navBox-1 {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     padding: 10px;
-    margin-left: 15rem;
-    
+    margin-left: 5rem;
 
-    img{
-      padding: 10px;
+    img {
       margin-right: 40px;
-
-      
-      
     }
 
-    .I-2-box{
-
+    .I-2-box {
       height: 50px;
       border: 2px solid grey;
-    width: 400px;
+      width: 400px;
 
-      input{
-        
-        
+      input {
         border-radius: 5px;
-         border: none;
-         
-         margin-top: 10px;
-         margin-left: 40px;
-  font-size: 20px;
-  outline: none;
-  
+        border: none;
 
-    }
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 20px;
+        outline: none;
+      }
 
-i{
-  margin-left: 30px;
-  font-size: 20px;
-  padding-left: 30px;
-  margin-left: 30px;
-}
+      i {
+        margin-left: 30px;
+        font-size: 20px;
+        padding-left: 30px;
+        margin-left: 30px;
+      }
 
-input, i{
-
-  padding: 0;
-  margin-left: 30px;
-}
-
-    
-     
- 
+      input,
+      i {
+        padding: 0;
+        margin-left: 30px;
+      }
     }
 
     #Dark-logo {
       width: 9rem;
       height: auto;
       cursor: pointer;
-      
     }
 
-    .cart-box{
+    .cart-box {
       display: flex;
-      
-    flex-direction: row;
-    padding: 30px;
-    gap: 40px;
-    margin-left: 40px;
-    font-size: 20px;
-    font-family: "Gill Sans", sans-serif;
-    
-    
 
-    button {
-      background-color: #87237e;
-      color: #fff;
-      border: none;
-      box-shadow: 0 2px 8px rgba(32, 32, 32, 0.3);
-      height: 40px;
-      width: 80px;
-      text-align: center;
-      border-radius: 8px;
+      flex-direction: row;
+      padding: 30px;
+      gap: 40px;
+      margin-left: 40px;
       font-size: 20px;
-      
-    }
+      font-family: "Gill Sans", sans-serif;
 
+      button {
+        background-color: #87237e;
+        color: #fff;
+        border: none;
+        box-shadow: 0 2px 8px rgba(32, 32, 32, 0.3);
+        height: 40px;
+        width: 80px;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 20px;
+      }
     }
   }
-  .product-box{
+  .product-box {
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 30px;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    justify-content: space-between;
+    padding: 20px;
+    justify-content: space-around;
 
-    span{
+    span {
       font-size: 20px;
       font-family: "Gill Sans", sans-serif;
     }
-
   }
+}
 
+section {
+  h1 {
+    text-align: center;
+    padding: 70px;
+    font-size: 40px;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #87237e;
   }
+}
 
-  section{
-    h1{
-      text-align: center;
-      padding: 70px;
-      font-size: 40px;
-      font-family: "Gill Sans", sans-serif;
-      font-weight: 500;
-      margin-top: 10px;
-      color: #87237e;
-    }
-  }
-
-
-.projects-container{
-
-display: flex;
-align-items: center;
+.projects-container {
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 
-
-
   .cards {
-    
     width: 20%;
     background-color: #fff;
     border-radius: 10px;
     margin: 40px;
     box-shadow: #87237e 0px 3px 8px;
-  
+
     .image {
       img {
         width: 100%;
@@ -154,18 +124,18 @@ align-items: center;
         height: 400px;
       }
     }
-  
+
     .title {
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
       padding: 5px;
     }
-  
+
     .des {
       text-align: center;
       padding: 4px;
       font-family: Arial, Helvetica, sans-serif;
-  
+
       button {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -181,15 +151,12 @@ align-items: center;
         margin: 10px;
         box-shadow: 0 2px 8px rgba(32, 32, 32, 0.3);
         font-family: Arial, Helvetica, sans-serif;
-  
-        
       }
     }
   }
-  
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,15 +168,14 @@ footer{
   background-color: rgb(248, 248, 255);
   font-family: Arial, Helvetica, sans-serif;
 
-  h3{
+  h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 600;
   }
 
-  h6{
+  h6 {
     font-size: 23px;
     font-weight: 600;
   }
-  
 }

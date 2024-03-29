@@ -59,8 +59,8 @@
       </div>
       <hr />
     </nav>
-
-    <form @submit.prevent="">
+<div class="form-container">
+  <form @submit.prevent="">
       <div>
         <h1>ADD DELIVERY ADDRESS</h1>
       </div>
@@ -112,6 +112,8 @@
         </div>
       </div>
     </form>
+</div>
+   
     <footer>
       <div class="box-1">
         <div>

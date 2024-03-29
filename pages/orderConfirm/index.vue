@@ -191,7 +191,7 @@
   import { onMounted, reactive } from "vue";
   import { useRouter } from "vue-router";
 const router = useRouter();
-
+  
   let cartItem = reactive({});
 
   let address = reactive({});
